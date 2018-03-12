@@ -2,70 +2,331 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Scandinavian herbs</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--
 
-
+        &lt;!&ndash; bxSlider CSS file &ndash;&gt;
+        <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                maxSlides: 2,
+                moveSlides: 2, //количество слайдов, перемещающихся вместе при смене слайда
+                pager: false, // отключаем индикатор количества слайдов
+                nextText: '',
+                prevText: '',
+                controls: false,    // отключаем кнопки
+                auto: true,
+                autoControls: false,//будут добавлены кнопки Start / Stop.
+                stopAutoOnClick: true,
+                slideWidth: 600
+            });
+        });
+
+    </script>
 </head>
 <body>
 <!-- site header -->
 <div class="navbar-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <a class="navbar-brand">
+                    <img src="/img/cropped-logosh.png" alt="Scandinavian herbs">
+                </a>
+            </div>
+            <div class="col-lg-7">
+                <div class="large-screen-nav">
+                    <ul class="menu-navbar-nav">
 
-    <a class="navbar-brand">
-        <img src="/img/cropped-logosh.png" alt="Scandinavian herbs">
-    </a>
+                        <li><a href="#" class="is-active">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Become a Reseller</a></li>
 
-    <div class="large-screen-nav">
-        <ul class="menu-navbar-nav">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="social-icons">
 
-                <li><a href="#" class="is-active">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Become a Reseller</a></li>
-
-        </ul>
-    </div>
-
-    <div class="social-icons">
-
-        <a href="https://www.facebook.com/Scandinavian-Herbs-912257898811415/" class="facebook" data-title="Facebook"
-           target="_blank">
+                    <a href="https://www.facebook.com/Scandinavian-Herbs-912257898811415/" class="facebook"
+                       data-title="Facebook"
+                       target="_blank">
             <span class="fa-stack fa-lg">
   <i class="fa fa-circle fa-stack-2x"></i>
   <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 </span>
-        </a>
+                    </a>
 
-        <a href="https://twitter.com/ScandiHerbs" class="twitter" data-title="Twitter" target="_blank">
+                    <a href="https://twitter.com/ScandiHerbs" class="twitter" data-title="Twitter" target="_blank">
         <span class="fa-stack fa-lg">
   <i class="fa fa-circle fa-stack-2x"></i>
   <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 </span>
-        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- end site header -->
 
-<div class="sslider clearfix">
-    <img src="/img/norway-1835609_1920.jpg" width="1920" height="640" alt="Scandinavian Herbs" typeof="foaf:Image" class="img-responsive">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/img/norway-1835609_1920.jpg" style="width:100%">
+        <h2 id="text_slide1">
+            <a href="#">Body Care</a>
+        </h2>
+        <!--<div class="text">Caption Text</div>-->
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/img/shutterstock_638702431.jpg" style="width:100%">
+        <!--    <div class="text">Caption Two</div>-->
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/img/shutterstock_352866464.jpg" style="width:100%">
+        <!--        <div class="text">Caption Three</div>-->
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<div class="bx-pager bx-default-pager">
-    <div class="bx-pager-item">
-        <a href="" data-slide-index="0" class="bx-pager-link">1</a>
-    </div>
-    <div class="bx-pager-item">
-    <a href="" data-slide-index="1" class="bx-pager-link">2</a>
-    </div>
-    <div class="bx-pager-item">
-        <a href="" data-slide-index="2" class="bx-pager-link active">3</a>
-    </div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
+
+<div class="news-letter col-lg-12 ">
+    <h2 class="d-flex justify-content-center">Subscribe to our newsletter</h2>
+    <form class="news-letter-form d-flex justify-content-center" method="post" action="">
+
+        <input id="edit-name" type="text" placeholder="Name" name="name" value size="60" maxlength="255">
+        <input id="edit-email" type="email" placeholder="Your Email Here" name="email" value size="60" maxlength="254"
+               required="required">
+        <button class="btn btn-primary" type="submit" id="edit-submit" value="Submit">Submit</button>
+    </form>
+</div>
+
+
+<div class="view-header col-lg-12 ">
+    <h2 class="our-blog ">Our blog</h2>
+
+
+    <br>
+    <div class="bxslider">
+        <div class="slide d-flex col-lg-6">
+            <div class="image-block"><img src="/img/flower-3086563_1280.jpg"></div>
+            <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h2>What does your skin-care products contain?</h2></div>
+                </a>
+                <div class="blog-info d-flex justify-content-center">
+                    <div class="item blog-date">18, January 2017</div>
+                    <div class="item blog-comment">No comment</div>
+                    <div class="item blog-author"><a href="#" hreflang="en">admin</a></div>
+                </div>
+
+                <div class="blog-content">
+                    <strong><h3>ACRYLAMIDE (POLYACRYLAMIDE)</h3></strong>
+                    <h5>was noted in connection with a
+                        serious accident…</h5>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+            </div>
+        </div>
+
+
+        <div class="slide d-flex col-lg-6">
+            <div class="image-block"><img src="/img/cream-1327847_1280.jpg"></div>
+            <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h2>What does your skin-care products contain?</h2></div>
+                </a>
+                <div class="blog-info d-flex justify-content-center">
+                    <div class="item blog-date">18, January 2017</div>
+                    <div class="item blog-comment">No comment</div>
+                    <div class="item blog-author"><a href="#" hreflang="en">admin</a></div>
+                </div>
+
+                <div class="blog-content">
+                    <strong><h3>ACRYLAMIDE (POLYACRYLAMIDE)</h3></strong>
+                    <h5>was noted in connection with a
+                        serious accident…</h5>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+            </div>
+        </div>
+
+
+        <div class="slide d-flex col-lg-6">
+            <div class="image-block"><img src="/img/nature-3092005_1280.jpg"></div>
+            <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h2>What does your skin-care products contain?</h2></div>
+                </a>
+                <div class="blog-info d-flex justify-content-center">
+                    <div class="item blog-date">18, January 2017</div>
+                    <div class="item blog-comment">No comment</div>
+                    <div class="item blog-author"><a href="#" hreflang="en">admin</a></div>
+                </div>
+
+                <div class="blog-content">
+                    <strong><h3>ACRYLAMIDE (POLYACRYLAMIDE)</h3></strong>
+                    <h5>was noted in connection with a
+                        serious accident…</h5>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+            </div>
+        </div>
+
+
+        <div class="slide d-flex col-lg-6">
+            <div class="image-block"><img src="/img/shark-2683184_1280.jpg"></div>
+            <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h2>What does your skin-care products contain?</h2></div>
+                </a>
+                <div class="blog-info d-flex justify-content-center">
+                    <div class="item blog-date">18, January 2017</div>
+                    <div class="item blog-comment">No comment</div>
+                    <div class="item blog-author"><a href="#" hreflang="en">admin</a></div>
+                </div>
+
+                <div class="blog-content">
+                    <strong><h3>ACRYLAMIDE (POLYACRYLAMIDE)</h3></strong>
+                    <h5>was noted in connection with a
+                        serious accident…</h5>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="view-header col-lg-12 ">
+    <h2 class="our-blog ">Our Testimonals</h2>
+
+
+    <br>
+    <div class="bxslider">
+        <div class="slide-two d-flex col-lg-6">
+                <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h3>Ing-Marie Olsson</h3></div>
+                </a>
+
+
+                <div class="blog-content">
+
+                    <h4>I have all my life suffered from so called weak joints.
+                        But gradually they became more and more…
+                    </h4>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+
+                    <div class="image-testimonals"><img src="/img/people-2388575_640_5.png"></div>
+            </div>
+        </div>
+
+        <div class="slide d-flex col-lg-6">
+            <div class="blog-title-comment">
+                <a href="#">
+                    <div class="blog-single-title"><h3>Lise-Lotte Möller Gotene, Sweden
+                    </h3></div>
+                </a>
+
+
+                <div class="blog-content">
+
+                    <h4>Our family had not made it through this summer with its bites from mosquitoes and gnats if we…
+                    </h4>
+                    <br>
+
+                    <a href="#">
+                        <button class="btn btn-primary read-me-button" type="button" value="read-more">Read More
+                        </button>
+                    </a>
+                    </p></div>
+
+                <div class="image-testimonals"><img src="/img/people-2388575_640_5.png"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+
+<!-- Test the scroll -->
+<div  style="height:2000px;">
+
+    <h3><i id="return-to-top" class="fa fa-level-up" aria-hidden="true"></i></h3>
+
+</div>
+
+<!--scripts-->
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
