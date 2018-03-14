@@ -10,11 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!--
 
-        &lt;!&ndash; bxSlider CSS file &ndash;&gt;
-        <link href="/css/jquery.bxslider.css" rel="stylesheet" />
-    -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -36,7 +32,7 @@
                 slideWidth: 600
             });
         });
-            $(document).ready(function () {
+        $(document).ready(function () {
             $('.bxslider-first').bxSlider({
                 maxSlides: 1,
                 moveSlides: 1, //количество слайдов, перемещающихся вместе при смене слайда
@@ -47,11 +43,9 @@
                 auto: true,
                 autoControls: false,//будут добавлены кнопки Start / Stop.
                 stopAutoOnClick: false,
-                captions:true,
-                useCSS:true,
+                captions: true,
+                useCSS: true,
                 slideWidth: 1500,
-                touchEnabled: false,
-                oneToOneTouch: false,
             });
         });
 
@@ -59,19 +53,20 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-default fixed-top" style="height: 120px; background-color: #f7f7f7">
-        <div class="container">
-            <div class="navbar-header ">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<nav class="navbar navbar-expand-lg navbar-default fixed-top" style="height: 120px; background-color: #f7f7f7">
+    <div class="container">
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">
               Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="" class="navbar-brand col-lg-3">
-                    <img src="/img/cropped-logosh.png" alt="Scandinavian herbs">
-                </a>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand col-lg-3">
+                <img src="/img/cropped-logosh.png" alt="Scandinavian herbs">
+            </a>
 
             <div class="collapse navbar-collapse col-lg-8 d-flex " id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav large-screen-nav">
@@ -88,7 +83,8 @@
 
             <div class="social-icons col-lg-1 d-flex">
 
-                <a href="https://www.facebook.com/Scandinavian-Herbs-912257898811415/" class="facebook" data-title="Facebook"
+                <a href="https://www.facebook.com/Scandinavian-Herbs-912257898811415/" class="facebook"
+                   data-title="Facebook"
                    target="_blank">
             <span class="fa-stack fa-lg">
   <i class="fa fa-circle fa-stack-2x"></i>
@@ -103,36 +99,57 @@
 </span>
                 </a>
             </div>
-            </div>
         </div>
+    </div>
 
-    </nav>
+</nav>
 
 <!-- Test the scroll -->
 
 
 <div class="bxslider-first">
 
- <!--   <div class="bxslider-first-slide">
+    <div class="bxslider-first-slide">
         <img src="/img/norway-1835609_1920.jpg">
         <h2 class="slide-title bx-caption" id="slide-title">
-            <a href="">Scandinavian Herbs</a>
+            Scandinavian Herbs
         </h2>
         <h2 class="slide-text bx-caption" id="slide-text">
-            <a href=""> Pure Well-Being </a>
+            Pure Well-Being
         </h2>
         <div class="button bx-caption" id="slide-button">
-            <a href="">See our Products</a>
+            <a href="#">See our Products</a>
         </div>
-    </div>-->
- <img src="/img/norway-1835609_1920.jpg">
-    <div><img src="/img/shutterstock_638702431.jpg"></div>
-    <div><img src="/img/shutterstock_352866464.jpg"></div>
+    </div>
+    <div class="bxslider-first-slide">
+        <img src="/img/shutterstock_638702431.jpg">
+        <h2 class="slide-title bx-caption" id="slide-title2">
+            Body care
+        </h2>
+        <h2 class="slide-text bx-caption" id="slide-text2">
+            For every situation
+        </h2>
+        <div class="button bx-caption" id="slide-button2">
+            <a href="#">Spring Oil</a>
+        </div>
+    </div>
+    <div class="bxslider-first-slide">
+        <img src="/img/shutterstock_352866464.jpg">
+        <h2 class="slide-title bx-caption" id="slide-title3">
+            New in
+        </h2>
+        <h2 class="slide-text bx-caption" id="slide-text3">
+            Love care
+        </h2>
+        <div class="button bx-caption" id="slide-button3">
+            <a href="#">Secret of Love</a>
+        </div>
+    </div>
 </div>
 
 <!--first banner-->
 
-<div class="cta-banner ed-align-Left cta-overlay" >
+<div class="cta-banner ed-align-Left cta-overlay">
     <aside id="es_cta_simple-4" class="widget widget_es_cta_simple es-widget-count-1">
 
         <div class="cta-bkg-image">
@@ -140,17 +157,17 @@
             <img src="/img/bears-garlic-1370581_1280.jpg" alt="The Unique power of herbs" class="img-responsive">
             <div class="cta-simple-content">
                 <div class="store-wrapper-banner">
-                    <div class="banner-text wow fadeInLeft  animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+                    <div class="banner-text wow fadeInLeft  animated" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s;">
                         <div class="cta-title_simple main-title">The Unique power of herbs</div>
                         <div class="cta-desc_simple"><p>Discover nature's true potential...</p></div>
                     </div>
-                    <div class="banner-btn wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+                    <div class="banner-btn wow fadeInRight animated" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s;">
                         <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
-
-
 
 
         </div>
@@ -160,27 +177,35 @@
 <!--end first banner-->
 
 <!--second banner-->
-<!--<div class="cta-banner ed-align-Center cta-overlay clearfix" style="text-align: Center !important;">
+<div class="cta-banner ed-align-Left cta-overlay">
     <aside id="es_cta_simple-5" class="widget widget_es_cta_simple es-widget-count-1">
-        <div class="cta-simple-content">
-            <div class="store-wrapper">
-                <div class="banner-text wow fadeInLeft  animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
-                    <div class="cta-title_simple main-title">Secret of Love</div>
-                    <div class="sub-text"> Stimulates blood flow</div>
-                    <div class="cta-desc_simple"><p>Secret of Love is a 100% natural lubricant that does not contain any harmful chemical ingredients</p></div>
-                </div>
-                <div class="banner-btn wow fadeInRight  animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
-                    <a href="/secret-love">Read More</a>
+
+        <div class="cta-bkg-image">
+
+            <img src="/img/shutterstock_352866464.jpg" alt="The Unique power of herbs" class="img-responsive">
+            <div class="cta2-simple-content d-flex justify-content-center" id="banner-text-2">
+                <div class="store-wrapper-banner">
+                    <div class="banner-text2 wow fadeInRight  animated" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s;">
+                        <div class="cta2-title_simple main-title">
+
+                            <h2>Secret of Love</h2>
+                            <h3>Stimulates blood flow</h3>
+                        </div>
+                        <div class="cta2-desc_simple"><p>Secret of Love is a 100% </br>natural lubricant that
+                            does </br> not contain any harmful </br> chemical ingredients</p></div>
+                    </div>
+                    <div class="banner-btn wow fadeInRight animated" data-wow-delay="0.5s"
+                         style="visibility: visible; animation-delay: 0.5s;">
+                        <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="cta-bkg-image">
-            <img src="/img/shutterstock_352866464_1.jpg" width="1286" height="200" alt="Secret of Love" typeof="foaf:Image" class="img-responsive">
 
 
         </div>
     </aside>
-</div>-->
+</div>
 <!--end second banner-->
 
 <div class="news-letter col-lg-12 ">
@@ -193,7 +218,6 @@
         <button class="btn btn-primary" type="submit" id="edit-submit" value="Submit">Submit</button>
     </form>
 </div>
-
 
 <div class="view-header col-lg-12">
     <h2 class="our-blog ">Our blog</h2>
@@ -278,7 +302,6 @@
             </div>
         </div>
 
-
         <div class="slide d-flex col-lg-6">
             <div class="image-block"><img src="/img/shark-2683184_1280.jpg"></div>
             <div class="blog-title-comment">
@@ -309,7 +332,7 @@
 </div>
 </div>
 
-<div class="view-header col-lg-12 " >
+<div class="view-header col-lg-12 ">
     <h2 class="our-blog ">Our Testimonials</h2>
 
 
@@ -391,65 +414,45 @@
 
 </div>
 </div>
-<!--third banner-->
-<!--<div class="cta-banner ed-align-Right cta-overlay clearfix" style="text-align: Right !important;">
-    <aside id="es_cta_simple-7" class="widget widget_es_cta_simple es-widget-count-1">
-        <div class="cta-simple-content">
-            <div class="store-wrapper">
-                <div class="banner-text wow fadeInLeft  animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
-                    <div class="cta-title_simple main-title">Our Secret Ingredients...</div>
-                    <div class="sub-text"> </div>
-                    <div class="cta-desc_simple"><p>We use only nature-made ingredients</p></div>
-                </div>
-                <div class="banner-btn wow fadeInRight  animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="cta-bkg-image">
-            <img src="/img/shutterstock_77143096_0.jpg" width="1250" height="220" alt="Our Secret Ingredients" typeof="foaf:Image" class="img-responsive">
 
-
-        </div>
-    </aside>
-</div>-->
-<!--end third banner-->
 
 <!--Footer section-->
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div id="section-footer2">
         <div class="store-wrapper">
             <div class="container">
-            <div class="row">
-            <div class="overlay col-lg-2">
-                <div class="location">
-                <h2>Our Location</h2>
-            </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.5144914822192!2d17.089206882221397!3d59.64995024523279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e502a37e4f689%3A0x6ea7bb8e676110ad!2sMyrangatan15%2C74537Enk%C3%B6ping%2CSweden!5e0!3m2!1sen!2smk!4v1464878018194"
-                        width="390" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-            </div>
-            <div class="field-item col-lg-3 ml-auto">
+                <div class="row">
+                    <div class="overlay col-lg-2">
+                        <div class="location">
+                            <h2>Our Location</h2>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.5144914822192!2d17.089206882221397!3d59.64995024523279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e502a37e4f689%3A0x6ea7bb8e676110ad!2sMyrangatan15%2C74537Enk%C3%B6ping%2CSweden!5e0!3m2!1sen!2smk!4v1464878018194"
+                                width="390" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="field-item col-lg-3 ml-auto">
 
 
-                <h2>Scandinavian Herbs AB</h2>
-                <p>Myrangatan 15<br>
-                    SE-745 37 Enköping<br>
-                    Sweden<br>
-                    +46 (0)171-44 00 30<br>
-                    +46 (0)171-44 00 24<br>
-                    info@scandinavianherbs.se</p>
+                        <h2>Scandinavian Herbs AB</h2>
+                        <p>Myrangatan 15<br>
+                            SE-745 37 Enköping<br>
+                            Sweden<br>
+                            +46 (0)171-44 00 30<br>
+                            +46 (0)171-44 00 24<br>
+                            info@scandinavianherbs.se</p>
 
+                    </div>
+                    <div class="field-item col-lg-3">
+                        <h2>About us</h2>
+                        <p>
+                            We have been on the market for 16 years with our wellness products for self-care. Our
+                            mission is
+                            to provide paraben-free products, products that are free of chemical additives. All
+                            Scandinavian
+                            Herbs creams and oils are 100% natural, based on herbs from Iceland.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="field-item col-lg-3">
-                <h2>About us</h2>
-                <p>
-                We have been on the market for 16 years with our wellness products for self-care. Our mission is
-                to provide paraben-free products, products that are free of chemical additives. All Scandinavian
-                Herbs creams and oils are 100% natural, based on herbs from Iceland.
-                </p>
-            </div>
-</div>
-        </div>
         </div>
     </div>
 

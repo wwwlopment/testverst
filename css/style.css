@@ -3,49 +3,21 @@
     padding: 0;
 }
 
-
 body {
     width: 100%;
 }
 
 .bx-wrapper{
-    /*position: static;*/
 margin-top: 130px;
 }
 
-/*
-#menu.fixed {
-    position:fixed;
-    top:0; left:0;
-    width:100%;
-    z-index: 999;
-}
-*/
-
-/*.navbar-header {
-   !* width: 100%;*!
-    height: 120px;
-    background-color: #f7f7f7;
-
-}*/
 
 .navbar-brand img {
     display: block;
     width: 350px;
     float: left;
 }
-/*
 
-.large-screen-nav ul {
-    list-style-type: none;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    float: left;
-}
-*/
 
 .large-screen-nav li {
     /*float: left;*/
@@ -91,7 +63,7 @@ aside:before {
     background: rgba(0, 0, 0, 0.65);
     position: absolute;
     width: 100%;
-    height: 292px;
+    height: 312px;
     z-index: 25;
     /*top: auto;*/
 
@@ -103,15 +75,64 @@ aside:before {
     line-height: 1.2;
 }
 
-.cta-desc_simple p {
+.cta2-title_simple.main-title h2 {
+    font-size: 3vw;
+    color: #fff;
+    line-height: 1.2;
+}
 
-    /*display: block;*/
+.cta2-title_simple.main-title h3 {
+    font-size: 2vw;
+    color: #fff;
+    line-height: 1.2;
+}
+
+
+ #banner-text-2 {
+     float: right;
+     text-align: center;
+     margin-right: 200px;
+  }
+
+.cta3-title_simple.main-title h2 {
+    font-size: 3vw;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.cta3-title_simple.main-title h3 {
+    font-size: 2vw;
+    color: #fff;
+    line-height: 1.2;
+}
+
+
+#banner-text-3 {
+    float: right;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.cta-desc_simple p {
+    display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     color: #fff;
-    font-size: 4.5vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.cta2-desc_simple p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #ffb900;
+    font-size: 2.5vw;
     font-weight: bold;
     margin: 0 0 10px;
 }
@@ -119,14 +140,30 @@ aside:before {
 .cta-bkg-image {
     position: relative;
     height: 292px;
+    margin-bottom: 20px;
+}
+.banner-btn a {
+    background: #fff;
+    min-width: 66px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 20px;
+    color: #1f1f1f;
+    text-decoration: none;
+
 }
 
-.banner-btn a:before {
 
-    width: 20px;
-    height: 20px;
+.banner-btn a:before {
+    width: 50px;
+    height: 50px;
     position: absolute;
     content: "";
+    left: 0;
     background: #f7c545;
     text-align: left;
     color: #fff;
@@ -135,19 +172,9 @@ aside:before {
     font-weight: 100;
     overflow: hidden;
     border-right: 1px solid #fff;
-    z-index: 25;
 }
 
-.cta-banner.cta-overlay
-.widget_es_cta_simple .banner-btn a {
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    position: relative;
-    padding-left: 70px;
-    padding-right: 20px;
-    color: #1f1f1f;
-}
+
 
 .store-wrapper {
     width: 1260px;
@@ -239,50 +266,135 @@ aside:before {
 
 #slide-title {
     background-color: RGBA(255, 255, 255, 0.8);
-    text-decoration: none;
-    width: 550px;
+    width: 700px;
     height: 100px;
-    left: 380px;
+    left: 320px;
     padding: 35px;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+
 }
 
 #slide-text {
     background-color: RGBA(5, 5, 5, 0.8);
     color: white;
     text-decoration: none;
-    width: 270px;
-    height: 50px;
-    left: 530px;
-    padding: 15px;
+    width: 300px;
+    height: 70px;
+    left: 500px;
+    padding: 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-#slide-button {
+#slide-button  {
     width: 200px;
-    height: 50px;
-    left: 570px;
+    height: 45px;
+    left: 580px;
     background: #0bb1af;
     font-size: large;
     padding: 10px 30px 10px 30px;
     box-shadow: none;
     text-decoration: none;
-}
-
-#slide-title a {
-    color: black;
-    text-transform: uppercase;
-
-}
-#slide-text a {
     color: white;
+}
+
+
+#slide-title2 {
+    background-color: RGBA(255, 255, 255, 0.8);
+    width: 400px;
+    height: 100px;
+    left: 430px;
+    padding: 35px;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: 8px;
     text-transform: uppercase;
+    color: black;
+
+}
+
+#slide-text2 {
+    background-color: RGBA(5, 5, 5, 0.8);
+    color: white;
+    text-decoration: none;
+    width: 400px;
+    height: 70px;
+    left: 390px;
+    padding: 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#slide-button2  {
+    width: 200px;
+    height: 45px;
+    left: 520px;
+    background: #0bb1af;
+    font-size: large;
+    padding: 10px 30px 10px 30px;
+    box-shadow: none;
+
+}
+
+#slide-title3 {
+    background-color: RGBA(255, 255, 255, 0.8);
+    width: 270px;
+    height: 100px;
+    left: 500px;
+    padding: 35px;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+#slide-text3 {
+    background-color: RGBA(5, 5, 5, 0.8);
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    left: 505px;
+    padding: 20px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+#slide-button3  {
+    width: 200px;
+    height: 45px;
+    left: 535px;
+    background: #0bb1af;
+    font-size: large;
+    padding: 10px 30px 10px 30px;
+    box-shadow: none;
+    text-decoration: none;
+    color: white;
 }
 
 #slide-button a {
+    text-decoration: none;
     color: white;
 }
 
+#slide-button2 a{
+    text-decoration: none;
+    color: white;
+}
 
-
+#slide-button3 a {
+    text-decoration: none;
+    color: white;
+}
 
 .item {
     padding: 1px 5px;
@@ -428,7 +540,6 @@ margin-left: 50px;
     width: 390px ;
     height: 210px;
     float: left;
-    /*    margin-left: 270px;*/
 }
 
 .field-item p {
@@ -459,3 +570,7 @@ margin-left: 50px;
     margin-bottom: 10px;
 }
 
+.bx-wrapper .bx-controls-direction a {
+    margin-top: -100px;
+    z-index: 50;
+}
