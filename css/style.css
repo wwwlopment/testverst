@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-body {
+/*body {
     width: 100%;
-}
+}*/
 
 .bx-wrapper{
 margin-top: 130px;
@@ -46,8 +46,6 @@ margin-top: 130px;
     font-size: 1.5rem;
 }
 
-
-
 .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #09b474 !important;
     /*box-shadow: none !important;*/
@@ -57,6 +55,9 @@ margin-top: 130px;
     background: darkgray !important;
 }
 
+.bx-wrapper .bx-pager {
+    margin-bottom: 270px;
+}
 
 aside:before {
     content: "";
